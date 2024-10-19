@@ -1,3 +1,14 @@
+<?php
+include ('app/config.php');
+session_start();
+if (isset($_SESSION['session_email'])){
+echo "la sesion activa es de: ".$_SESSION['session_email'];}
+else{
+echo "no hay sesion activa";
+header('location:'.$URL.'/login');
+}
+
+?>
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
