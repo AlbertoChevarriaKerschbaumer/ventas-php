@@ -26,8 +26,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="public/templates/adminlte-3.2.0-rc/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="public/templates/adminlte-3.2.0-rc/dist/css/adminlte.min.css">
-</head>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  /head>
 <body class="hold-transition sidebar-mini">
+
+<script> 
+Swal.fire({
+  title: "Good job!",
+  text: "You clicked the button!",
+  icon: "success"
+});
+</script>  
+
 <div class="wrapper">
 
   <!-- Navbar -->
@@ -263,6 +273,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+    <a href="app/controlers/login/cerrar_sesion.php" class="btn btn-primary m-2" >Cerrar Sesion</a>
+
 
     <!-- Main content -->
     <div class="content">

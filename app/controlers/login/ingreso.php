@@ -14,10 +14,12 @@ $nombres=$usuario['nombres'];
 }
 if ($contador==0){
     echo "datos incorrectos";
+   
 }else{
     echo "datos correctos"; 
+    
     session_start();
     $_SESSION['session_email']=$email;
-    header('location:'.$URL.'/login');
+    header('location:'.$URL);
 }
 ?>
