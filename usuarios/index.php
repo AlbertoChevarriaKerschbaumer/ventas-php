@@ -1,15 +1,14 @@
 <?php
-include ('app/config.php');
-include ('layout/sesion.php');
-include ('layout/parte1.php');
-// include ('layout/cerrar_sesion.php');
+include ('../app/config.php');
+include ('../layout/sesion.php');
+include ('../layout/parte1.php');
 ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
       <div class="container-fluid">
           <div class="col-12">
-            <h1 class="m-0">Bienvenidos al Sistema de Ventas</h1>
+            <h1 class="m-0">Listado de Usuarios</h1>
           </div><!-- /.col -->
       </div><!-- /.container-fluid -->
     <div class="content">
@@ -21,5 +20,5 @@ include ('layout/parte1.php');
     </div>
   </div>
 <?php
-  include ('layout/parte2.php');
+  include ('../layout/parte2.php');
 ?>
