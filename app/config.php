@@ -10,7 +10,7 @@ $pdo=new PDO($servidor,USUARIO,PASSWORD,array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET
 }catch (PDOException $e){
 echo "Error al conectar a la base de datos";
 }
-$URL='http://localhost/sistema-ventas/';
+$URL='http://localhost/sistema-ventas/'; //almacenar direccion PRINCIPAL DEL SISTEMA en variable $URL
 
 
 ?>

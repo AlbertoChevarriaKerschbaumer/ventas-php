@@ -1,7 +1,7 @@
 <?php
-include ('app/config.php');
-include ('layout/sesion.php');
-include ('layout/parte1.php');
+include ('app/config.php');//conexion de BD
+include ('layout/sesion.php');//activa y verifica que la sesion exista 
+include ('layout/parte1.php');//mostrar encabezado y cuerpo de pagina inicial
 // include ('layout/cerrar_sesion.php');
 ?>
 
@@ -21,5 +21,5 @@ include ('layout/parte1.php');
     </div>
   </div>
 <?php
-  include ('layout/parte2.php');
+  include ('layout/parte2.php');//pie de pagina inicial
 ?>

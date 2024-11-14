@@ -18,8 +18,8 @@ if ($contador==0){
 }else{
     echo "datos correctos"; 
     
-    session_start();
-    $_SESSION['session_email']=$email;
+    session_start(); //crear sesion
+    $_SESSION['session_email']=$email; //almacena el email en la variable $_SESSION['session_email']
     header('location:'.$URL);
 }
 ?>
