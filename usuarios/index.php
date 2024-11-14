@@ -40,7 +40,9 @@ include ('../app/controlers/usuarios/listado_usuarios.php');
                 <?php
                   foreach ($usuarios_datos as $usuario_dato){ ?>
                       <tr>
+                       <td> <?php echo $usuario_dato['id_usuario'];  ?></td>
                        <td> <?php echo $usuario_dato['nombres'];  ?></td>
+                       <td> <?php echo $usuario_dato['email'];  ?></td>
                       </tr>
                  <?php }
                 ?>
