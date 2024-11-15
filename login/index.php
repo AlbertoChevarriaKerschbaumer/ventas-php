@@ -14,7 +14,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="../public/templates/adminlte-3.2.0-rc/dist/css/adminlte.min.css">
 </head>
-<img src="../public/images/ventas.avif" class="img-fluid" alt="imagen..." width="360">
+<img src="../public/images/ventas.jpg" class="img-fluid" alt="imagen..." width="360">
 <body class="hold-transition login-page">
 <?php
 session_start();
