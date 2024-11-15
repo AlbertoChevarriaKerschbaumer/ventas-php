@@ -16,6 +16,24 @@
 </head>
 <img src="../public/images/ventas.avif" class="img-fluid" alt="imagen..." width="360">
 <body class="hold-transition login-page">
+<?php
+session_start();
+if (isset ($_SESSION['mensaje'])){
+    $respuesta=$_SESSION['mensaje'];
+    ?>
+    <script>
+    Swal.fire({
+    position: "top-end",
+    icon: "error",
+    title: "<?php echo $respuesta ?>",
+    showConfirmButton: false,
+    timer: 1500
+    });
+</script>
+    <?php
+}
+
+?>
 <div class="login-box">
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">

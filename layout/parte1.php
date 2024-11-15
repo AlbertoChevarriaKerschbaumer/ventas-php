@@ -18,7 +18,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="hold-transition sidebar-mini">
-
+  <script>
+      Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Bienvenido al Sistema <?php $email_sesion ?>",
+      showConfirmButton: false,
+      timer: 1500
+    });
+  </script>
 <div class="wrapper">
 
   <!-- Navbar -->
@@ -29,7 +37,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?php echo $URL; ?>/index.php" class="nav-link">Sistema de Ventas</a>
+        <a href="<?php echo $URL; ?>index.php" class="nav-link">Sistema de Ventas</a>
       </li>
       
     </ul>
@@ -51,7 +59,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?php echo $URL; ?>/index.php" class="brand-link">
+    <a href="<?php echo $URL; ?>index.php" class="brand-link">
       <img src="<?php echo $URL; ?>/public/images/ventas.jpg" alt="Ventas Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Sistema de Ventas</span>
     </a>
@@ -83,13 +91,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo $URL; ?>/usuarios" class="nav-link">
+                <a href="<?php echo $URL; ?>usuarios" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Listado de usuarios</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo $URL; ?>/usuarios/create.php" class="nav-link">
+                <a href="<?php echo $URL; ?>usuarios/create.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Creacion de Usuarios</p>
                 </a>

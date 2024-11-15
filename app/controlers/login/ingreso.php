@@ -13,13 +13,14 @@ $email_table=$usuario['email'];
 $nombres=$usuario['nombres'];
 }
 if ($contador==0){
-    echo "datos incorrectos";
-   
+    session_start(); //crear sesion
+    $_SESSION['mensaje']="Datos incorrectos";
+    header('location:'.$URL.'/login');
 }else{
-    echo "datos correctos"; 
-    
+    //echo "datos correctos";  
     session_start(); //crear sesion
     $_SESSION['session_email']=$email; //almacena el email en la variable $_SESSION['session_email']
     header('location:'.$URL);
 }
 ?>
+</html>
