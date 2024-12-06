@@ -1,6 +1,7 @@
 <?php
 include ('app/config.php');//conexion de BD
 include ('layout/sesion.php');//activa y verifica que la sesion exista 
+include('app/controlers/usuarios/listado_usuarios.php');
 include ('layout/parte1.php');//mostrar encabezado y cuerpo de pagina inicial
 // include ('layout/cerrar_sesion.php');
 ?>
@@ -29,20 +30,22 @@ include ('layout/parte1.php');//mostrar encabezado y cuerpo de pagina inicial
               <div class="card-body" style="display: block" >
               <table class="table table-hover table-sm">
                 <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                <tr>
+                    <th scope="col">Nro</th>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Email</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
+                <?php
+                  foreach ($usuarios_datos as $usuario_dato){ ?>
+                      <tr>
+                       <td> <?php echo $usuario_dato['id_usuario'];  ?></td>
+                       <td> <?php echo $usuario_dato['nombres'];  ?></td>
+                       <td> <?php echo $usuario_dato['email'];  ?></td>
+                      </tr>
+                 <?php }
+                ?>
                 </tbody>
               </table>
               </div>

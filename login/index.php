@@ -65,13 +65,13 @@ if (isset ($_SESSION['mensaje'])){
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
               <label for="remember">
-                Remember Me
+                <!-- Remember Me -->
               </label>
             </div>
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block">Acceder</button>
           </div>
           <!-- /.col -->
         </div>
